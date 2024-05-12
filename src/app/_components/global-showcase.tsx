@@ -36,6 +36,15 @@ export default function GlobeShowcase() {
   const sampleArcs = [
     {
       order: 1,
+      startLat: 37.7749,
+      startLng: -122.4194,
+      endLat: 37.7749,
+      endLng: -122.4194,
+      arcAlt: 0,
+      color: '#000000',
+    },
+    {
+      order: 1,
       startLat: -19.885592,
       startLng: -43.951191,
       endLat: -22.9068,
@@ -398,8 +407,8 @@ export default function GlobeShowcase() {
   const router = useRouter();
 
   return (
-    <div className="relative mx-auto h-full w-full max-w-7xl overflow-hidden px-4 md:h-[40rem]">
-      <World data={sampleArcs} globeConfig={globeConfig} />;
-    </div>
+<div className="relative mx-auto h-full w-full max-w-7xl overflow-hidden px-4 md:h-[40rem]">
+  <World data={sampleArcs} globeConfig={globeConfig} />
+</div>
   );
 }
