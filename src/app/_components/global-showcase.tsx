@@ -41,7 +41,16 @@ export default function GlobeShowcase() {
       endLat: 37.7749,
       endLng: -122.4194,
       arcAlt: 0,
-      color: '#000000',
+      color: '#000000', // Provide a default color here
+    },
+    {
+      order: 1,
+      startLat: -19.885592,
+      startLng: -43.951191,
+      endLat: -22.9068,
+      endLng: -43.1729,
+      arcAlt: 0.1,
+      color: colors[Math.floor(Math.random() * colors.length)], // Ensure a valid color is always provided
     },
     {
       order: 1,
